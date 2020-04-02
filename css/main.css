@@ -235,7 +235,8 @@ li a .system_icon {
     background-repeat: no-repeat;
     background-position: left;
     background-size: 25% 95%;
-    left: 330px;
+    left: -330px;
+    top: 400px;
 }
 
 .faq-img {
