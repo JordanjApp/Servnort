@@ -1,0 +1,53 @@
+
+
+.about-us {
+    position: relative;
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.about-info h2 {
+    font-size: 36px;
+}
+
+.about-info p {
+    font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#Trazado_55 {
+    display: none;
+}
+
+@media only screen and (min-width:576px){
+     
+    .about-us .container {
+        height: 450px;
+        align-items: center;
+    }
+
+    #Trazado_55{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -80px;
+        width: 50%;
+        height: 550px;
+    }
+
+    #Trazado_7 {
+        width: 450px;
+    }
+
+    .about-info {
+        width: 50%;
+    }
+
+
+}

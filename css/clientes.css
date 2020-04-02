@@ -1,0 +1,75 @@
+.clientes {
+    position: relative;
+}
+
+#trazado_iphone {
+    display: none;
+}
+
+.background {
+    height: 200px;
+    background: linear-gradient(180deg, rgba(13,125,252,1) 0%, rgba(7,63,126,1) 0%, rgba(13,125,252,1) 100%);
+}
+
+.content-clientes {
+    width: 80%;
+    margin: -150px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:0px 10px 12px 5px  rgba(104,255,253,0.2);
+    z-index: 1000;
+}
+
+.content-clientes h2 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.clients {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.do {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .do:hover {
+    background-color: #717171;
+  }
+
+  @media only screen and (min-width:576px){
+     #trazado_iphone {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 40%;
+         margin-top: -40px;
+     }
+
+     .background {
+         height: 450px;
+     }
+
+     .content-clientes {
+       margin-top: -250px;
+       width: 60%;
+     }
+
+  }

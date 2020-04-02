@@ -1,0 +1,191 @@
+header {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    height: 650px;
+}
+
+header .barra  {
+    height: 50px;
+    display: flex;  
+    justify-content: flex-end;
+}
+
+.barra nav {
+    width: 50%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 30PX;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+nav ul li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+
+a.activo {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+
+nav ul a {
+    margin-left: 20px;
+}
+
+header #trazo_1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+}
+
+header .container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#construction_site {
+   width: 40%;
+   height: 450px;
+   z-index: 900;
+}
+
+.textos {
+   width: 80%;
+}
+
+h2{
+     font-size: 60px;
+     color: #0D7DFC;
+     text-shadow: 5px 10px 20px  #0D7DFC;
+     margin-bottom: 20px;
+}
+
+.textos p {
+    color: black;
+    font-family: 'Open Sans Condensed' ;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 26px;
+}
+
+.textos a {
+    background: linear-gradient(90deg, rgba(13,125,252,1) 0%, rgba(7,63,126,1) 0%, rgba(13,125,252,1) 100%);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width:600px){ 
+
+    header {
+        height: auto;
+    }
+
+    header #trazo_1{
+       width: 100%;
+    }
+
+    header .container {
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+
+    h2{
+        font-size: 36px;     
+    }
+
+    .barra {
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    #menu-bar {
+        display: none;
+    }
+
+    
+    .textos {
+        margin-top: 50px;
+    }
+
+    header label {
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+      line-height: 50px;
+    }
+
+    nav ul{
+        display: block;
+        position: absolute;
+        padding: 0;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        z-index: 2000;
+        background-color: rgba(13,125,252,0.8);
+        transform: translateX(-100%);
+        transition: all 0.3s ease-out;
+    }
+
+    .checked {
+        transform: translateX(0);
+    }
+
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+    }
+
+    nav ul li:hover  {
+        background-color: rgba(13,125,252,0.4);
+    }
+
+    nav ul li:hover a {
+        border-bottom: none;
+    }
+
+    a.activo {
+        border-bottom: none;
+        background-color: rgba(13,125,252,0.5);
+    }
+    
+
+}

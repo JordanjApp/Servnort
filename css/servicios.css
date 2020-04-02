@@ -1,0 +1,153 @@
+#Trazado_100 {
+    display: none;
+}
+
+.nuestros-servicios {
+    margin: 40px 0;
+    position: relative;
+}
+
+.nuestros-servicios .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nuestros-servicios h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.servicios {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.servicio {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:0px 3px 12px 5px  rgba(13,125,252,0.2);
+}
+
+.servicio img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servicio h3 {
+   width: 100%;
+   color: #0D7DFC;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.servicio p {
+    color: black;
+    font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    text-align: justify;
+}
+
+
+.servicio .button  {
+     margin-top: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+}
+
+.servicio .button a {
+    display: inline-block;
+    color: #0D7DFC;
+    text-decoration: none;
+    text-align: left;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: #0D7DFC;
+  }
+
+  .dots {
+      width: 100%;
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  @media only screen and (min-width:576px){
+    .servicios {
+        width: 40%;
+    }
+
+    .servicio {
+        width: 270px;
+    }
+
+    #Trazado_100{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+    }
+
+    #trazado_9 {
+       width: 60%;
+    }
+
+  }
