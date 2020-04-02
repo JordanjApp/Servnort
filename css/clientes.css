@@ -38,6 +38,16 @@
     flex-wrap: wrap;
 }
 
+.client {
+    width: 250px;
+}
+
+.client img {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
 .do {
     cursor: pointer;
     height: 15px;
@@ -71,5 +81,9 @@
        margin-top: -250px;
        width: 60%;
      }
+
+      .client img {
+          margin-left:-50px;
+      }
 
   }
