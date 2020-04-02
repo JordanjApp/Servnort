@@ -21,7 +21,7 @@ body {
 }
 
 footer {
-    background:#0D7DFC ;
+    background: #0D7DFC;
 }
 
 #logistics {
@@ -36,7 +36,7 @@ footer {
 
 .info-footer .section {
     width: 100%;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .info-footer .section h4 {
@@ -73,7 +73,7 @@ footer {
 }
 
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width: 600px) {
 
 
     footer .container {
@@ -89,8 +89,8 @@ footer {
     }
 
     .info-footer {
-       width: 70%;
-       justify-content: space-around;
+        width: 70%;
+        justify-content: space-around;
     }
 
     .info-footer .section {
@@ -169,14 +169,14 @@ li a .system_icon {
     text-decoration: none;
     color: #090910;
     background: #fff;
-    box-shadow: 0 20px 30px -16px rgba(9,9,16,.2);
+    box-shadow: 0 20px 30px -16px rgba(9, 9, 16, .2);
 }
 
 #productos ul li a .system_info {
     -webkit-box-flex: 1;
     flex: 1;
     font-size: 1em;
-    font-family: scandia-web,sans-serif;
+    font-family: scandia-web, sans-serif;
     padding: 10px;
 }
 
@@ -190,9 +190,66 @@ li a .system_icon {
     font-size: 12px;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-@media only screen and (min-width:600px){
-    #productos ul li  {
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.imgr {
+    -webkit-animation: 50s rotate linear infinite;
+    animation: 50s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.imgr {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25% 95%;
+    right: -330px;
+}
+
+.imgl {
+    -webkit-animation: 50s rotate linear infinite;
+    animation: 50s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.imgl {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25% 95%;
+    left: 330px;
+}
+
+.faq-img {
+    width: 100%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (min-width: 600px) {
+    #productos ul li {
         width: 30%;
         margin-right: 10px;
     }
